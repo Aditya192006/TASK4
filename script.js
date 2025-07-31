@@ -21,7 +21,6 @@ function addTask() {
   document.getElementById('taskText').value = '';
   document.getElementById('taskDateTime').value = '';
 }
-/* Created By Yash kumar Banjare... */
 function completeTask(button) {
   const li = button.parentElement.parentElement;
   li.classList.toggle('completed');
@@ -38,7 +37,6 @@ function editTask(button) {
     span.innerHTML = `${newText} <small>${datePart}</small>`;
   }
 }
-/* Created By Yash kumar Banjare... */
 
 function deleteTask(button) {
   const li = button.parentElement.parentElement;
@@ -62,7 +60,6 @@ function addTask() {
       <button onclick="deleteTask(this)">🗑️</button>
     </div>
   `;
-/* Created By Yash kumar Banjare... */
   document.getElementById('taskList').appendChild(li);
   document.getElementById('taskText').value = '';
   document.getElementById('taskDateTime').value = '';
@@ -86,7 +83,6 @@ function editTask(button) {
     span.innerHTML = `${newText} <small>${datePart}</small>`;
   }
 }
-/* Created By Yash kumar Banjare... */
 function deleteTask(button) {
   const li = button.parentElement.parentElement;
   li.remove();
@@ -106,7 +102,6 @@ function filterTasks(type) {
     }
   });
 }
-/* Created By Yash kumar Banjare... */
 
 function updateTaskCounts() {
   const tasks = document.querySelectorAll('.task-item');
@@ -119,5 +114,3 @@ function updateTaskCounts() {
   document.getElementById('completedCount').textContent = done;
   document.getElementById('pendingCount').textContent = pending;
 }
-
-/* Created By Yash kumar Banjare... */
